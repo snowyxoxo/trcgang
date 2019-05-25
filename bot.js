@@ -5,7 +5,7 @@ const adminprefix = "+"
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`HooliGansᵀᵉᵃᵐ`,"http://twitch.tv/S-F")
+client.user.setGame(`The Reapers Collobration`,"http://twitch.tv/snowyxoxo2")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -81,9 +81,7 @@ client.on('message', message => {
   👑.bc  『MAKE BROADCAST FOR THE SERVER』
   ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
   💎『BOT CREATER』💎
-  HooliGansᵀᵉᵃᵐ
-  FALLEGA TEAM ᴳᴬᴹᴵᴺᴳ
-  𝓕𝟒𝓡𝓔𝓢_𝓢𝓐𝓝𝓚𝓞𝓤𝟕#2840
+  The Reapers Collobration
   ● ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ● 
  **`);
 
@@ -232,7 +230,7 @@ client.on('message', message => {
 
 
 client.on('guildMemberAdd', member => {
-  let channel = member.guild.channels.find('name', '💎𝕎elcome💎');
+  let channel = member.guild.channels.find('name', 'welcome');
   let memberavatar = member.user.avatarURL
     if (!channel) return;
   let embed = new Discord.RichEmbed()
@@ -246,7 +244,7 @@ client.on('guildMemberAdd', member => {
   .addField('•🕣|Time Create » ', member.user.createdAt.toLocaleString(), true)
 
                                      
-   .setFooter("|•♥•| HooliGansᵀᵉᵃᵐ |•♥•|")
+   .setFooter("The Reapers Collobration")
       .setTimestamp()
  
     channel.sendEmbed(embed);
@@ -344,7 +342,7 @@ client.on('guildMemberRemove', member => {
   .setColor('RED')
   .setFooter(`==== (っ◔◡◔)っ ♥ 𝐇𝐎𝐏𝐄 𝐘𝐎𝐔 𝐄𝐍𝐉𝐎𝐘 ♥ ====`, 'https://cdn.discordapp.com/attachments/397818254439219217/399292026782351381/shy.png')
 
-var channel =member.guild.channels.find('name', '💎𝕎elcome💎')
+var channel =member.guild.channels.find('name', 'welcome')
 if (!channel) return;
 channel.send({embed : embed});
 })
